@@ -1,0 +1,36 @@
+/* Document typography shared by the two Wenkai themes. */
+#write,
+#write :is(p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote,
+           table, thead, tbody, tr, th, td, figcaption, .md-toc-content) {
+  font-family: "LXGW WenKai Mono", "LXGW WenKai", serif;
+}
+
+@media screen {
+  /* Keep the sidebar scrollable while hiding its scrollbars. */
+  #typora-sidebar,
+  #typora-sidebar * {
+    scrollbar-width: none !important;
+  }
+
+  #typora-sidebar::-webkit-scrollbar,
+  #typora-sidebar *::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* Show the document scrollbar on hover without shifting the layout. */
+  content::-webkit-scrollbar,
+  content::-webkit-scrollbar:hover,
+  content::-webkit-scrollbar-track,
+  content::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  content:hover::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+  }
+
+  content::-webkit-scrollbar-thumb:hover,
+  content::-webkit-scrollbar-thumb:active {
+    background-color: var(--flexoki-600);
+  }
+}

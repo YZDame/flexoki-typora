@@ -1,9 +1,15 @@
 # Changelog
 
-All notable changes to the Flexoki Light theme for Typora will be documented in this file.
+All notable changes to the Flexoki themes for Typora will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.1.0] - 2026-11-15
+
+- Added Flexoki Dark using the official dark palette and the original light stylesheet.
+- Added Flexoki Wenkai Light and Flexoki Wenkai Dark with document-scoped fonts and scrollbars.
+- Packaged all four themes in one installation archive.
 
 ## [1.0.0] - 2024-12-24
 

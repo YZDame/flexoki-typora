@@ -1,0 +1,58 @@
+/* Flexoki Dark for Typora. The screen palette follows Steph Ango's Flexoki. */
+@import "flexoki-light.css";
+
+@media screen {
+  :root {
+    color-scheme: dark;
+    --is-dark-theme: true;
+    --mermaid-theme: night;
+
+    /* Map the shared stylesheet's light palette slots to dark UI roles. */
+    --flexoki-paper: #100F0F;
+    --flexoki-black: #CECDC3;
+    --flexoki-50: #1C1B1A;
+    --flexoki-100: #282726;
+    --flexoki-150: #343331;
+    --flexoki-200: #403E3C;
+    --flexoki-300: #575653;
+    --flexoki-600: #878580;
+
+    /* Dark mode uses the Flexoki 400 accents. */
+    --flexoki-red: #D14D41;
+    --flexoki-orange: #DA702C;
+    --flexoki-yellow: #D0A215;
+    --flexoki-green: #879A39;
+    --flexoki-cyan: #3AA99F;
+    --flexoki-blue: #4385BE;
+    --flexoki-purple: #8B7EC8;
+    --flexoki-magenta: #CE5D97;
+    --flexoki-cyan-light: #5ABDAC;
+
+    --bg-color4: var(--flexoki-100);
+    --text-color4: var(--flexoki-black);
+    --code-grey-color: var(--flexoki-600);
+    --select-text-bg-color: var(--flexoki-150);
+    --search-select-bg-color: #503D02;
+    --search-select-text-color: var(--text-color);
+    --md-char-color: var(--text-color2);
+    --meta-content-color: var(--text-color2);
+  }
+
+  #ty-tooltip {
+    background-color: var(--bg-color3);
+    color: var(--text-color);
+  }
+
+  .modal-backdrop {
+    background-color: var(--bg-color);
+  }
+
+  [lang="mermaid"] .label {
+    color: var(--text-color);
+  }
+
+  #write li.task-list-item > input[type="checkbox"]:checked,
+  #write li.md-task-list-item > input[type="checkbox"]:checked {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 8.5l3 3 6-6' stroke='%23100F0F' stroke-width='2'/%3E%3C/svg%3E");
+  }
+}
